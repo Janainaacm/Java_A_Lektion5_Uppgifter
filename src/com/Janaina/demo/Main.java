@@ -8,11 +8,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
 
-        //Uppgift 1
-        System.out.println("What's your name player?");
-        String playerOneName = sc.nextLine();
+        //Uppgift 2
+        System.out.println("What number do you want to loop");
+        int loopNumber = sc.nextInt();
 
-        System.out.println("Player #1: " + playerOneName);
+        for (int i = 0; i < loopNumber; i++) {
+            System.out.println(i);
+        }
 
 
     }
