@@ -8,13 +8,20 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
 
-        //Uppgift 2
-        System.out.println("What number do you want to loop");
-        int loopNumber = sc.nextInt();
+        //Uppgift 3
+        boolean isPlaying = true;
 
-        for (int i = 0; i < loopNumber; i++) {
-            System.out.println(i);
-        }
+        do {
+
+            System.out.println("Say the magic word");
+            String magicWord = sc.nextLine();
+
+            if (magicWord.equals("stop")){
+                isPlaying = false;
+            }
+
+
+        } while (isPlaying);
 
 
     }
